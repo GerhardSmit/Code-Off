@@ -91,7 +91,7 @@ public class Main {
                 writer.write(palindromes.get(i).toString());
                 writer.newLine();
                 for(int x = 0;x< numberOfWords;x++) {
-                    if(values.get(i).equals(values.get(x))) {
+                    if(values.get(i).equals(values.get(x)) && i != x) {
                         writer.write(words.get(x));
                             writer.newLine();
                     }
