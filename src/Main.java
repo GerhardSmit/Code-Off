@@ -77,7 +77,7 @@ public class Main {
             while(line!=null){
                 Integer wordValue =0;
                 for(int i =0;i<line.length();i++) {
-                    wordValue = letters.get(line.charAt(i));
+                    wordValue += letters.get(line.charAt(i));
                 }
                 words.add(line);
                 values.add(wordValue);
